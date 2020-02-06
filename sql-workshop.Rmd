@@ -12,10 +12,10 @@ output: html_document
 library(DBI)
 library(RMySQL)
 
-db_user <- 'admin'
-db_password <- 'testsql!'
-db_name <- 'oudb'
-db_host <- 'sqltest.clh43re5lq5h.us-east-1.rds.amazonaws.com'
+db_user <- 'wen017'
+db_password <- 'Duyu1234'
+db_name <- 'testdb'
+db_host <- 'sqltest.ci1qbavgoufr.us-east-1.rds.amazonaws.com'
 db_port <- 3306
 
 mydb <- dbConnect(MySQL(), user = db_user, password = db_password, dbname = db_name, host = db_host, port = db_port)
@@ -53,6 +53,11 @@ dbReadTable(mydb, 'studentInfo')
 
 #EXERCISE 1
 #Make two toy data sets with at least three variables and at least 30 rows each in them. Have a mix of numeric and character variables. Transfer these dataframes to your SQL database using the DBI commands. Name the tables whatever you like.
+
+
+
+
+
 
 ```
 
