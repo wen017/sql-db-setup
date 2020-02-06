@@ -8,9 +8,9 @@ output: html_document
 ## Connect to AMW MySQL Database
 ```{r}
 #install.packages("DBI", "RMySQL")
-
 library(DBI)
 library(RMySQL)
+
 
 db_user <- 'wen017'
 db_password <- 'Duyu1234'
@@ -44,6 +44,8 @@ dbWriteTable(mydb, "studentInfo", studentInfo)
 dbWriteTable(mydb, "studentAssessment", studentAssessment)
 dbWriteTable(mydb, "courses", courses)
 dbWriteTable(mydb, "studentRegistration", studentRegistration)
+
+
 
 #List tables to see that table was added
 dbListTables(mydb)
